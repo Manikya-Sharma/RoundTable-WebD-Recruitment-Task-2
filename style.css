@@ -17,7 +17,7 @@ body {
 }
 
 .close:hover {
-  background-color: rgba(50,50,50,0.5);
+  background-color: rgba(50, 50, 50, 0.5);
 }
 
 .logo {
@@ -182,7 +182,7 @@ input:focus::placeholder {
 }
 
 .fp:hover {
-  background-color: rgba(200,200,200,0.2);
+  background-color: rgba(200, 200, 200, 0.2);
 }
 
 .footer {
@@ -200,4 +200,52 @@ a {
 a:hover {
   text-decoration: underline;
   cursor: text;
+}
+
+@media screen and (width < 590px) {
+  body {
+    padding: 0;
+    overflow: hidden;
+  }
+  .logo {
+    position: fixed;
+    top: 7px;
+  }
+
+  .card {
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .close {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  .fp {
+    width: 88.5%;
+  }
+
+  .main h1 {
+    font-size: 1.6rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 81%;
+  }
+
+  .next {
+    margin-left: auto;
+    margin-right: auto;
+    width: 88.5%;
+  }
 }
